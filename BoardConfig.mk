@@ -36,6 +36,11 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset BOARD_RAMDISK_OFFSET --tags_offset BOARD_KERNEL_TAGS_OFFSET
 
+# Optimizations
+ROM_OPTIS := true
+BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad
+BOARD_GLOBAL_CPPFLAGS := -mvectorize-with-neon-quad
+
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
 # Increase the size if shaders of size greater than 12KB are used.
