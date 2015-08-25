@@ -41,6 +41,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-6.
 ROM_OPTIS := true
 BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad
 BOARD_GLOBAL_CPPFLAGS := -mvectorize-with-neon-quad
+TARGET_GCC_VERSION_EXP := 4.9
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
