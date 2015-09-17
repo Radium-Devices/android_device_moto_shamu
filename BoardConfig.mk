@@ -41,7 +41,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset BOARD_RAMDISK_OFFSET --tags_offset BOAR
 ROM_OPTIS := true
 BOARD_GLOBAL_CFLAGS := -mvectorize-with-neon-quad
 BOARD_GLOBAL_CPPFLAGS := -mvectorize-with-neon-quad
-TARGET_GCC_VERSION_EXP := 4.9
+KBUILD_BUILD_USER := w4tch0ut
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
